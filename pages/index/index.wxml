@@ -1,13 +1,17 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!--map-->
+<view>
+<map class="map"longitude="{{longitude}}" 
+latitude="{{latitude}}" 
+markers="{{markers}}" ></map>
+</view>
+<!--main button-->
+<view class="choose-capsule" class="button1">
+<image mode= "center" src="{{button1Src}}" ></image>
+</view>
+
+
+<!--jar button-->
+<view class="choose-capsule-jar">
+<image mode= "center" src="{{button2Src}}" ></image>
 </view>
