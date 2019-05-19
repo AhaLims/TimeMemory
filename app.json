@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/choose-capsule/chooose-capsule",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/choose-capsule/chooose-capsule",
     "pages/capsule-date/capsule-date",
     "pages/capsule-photo/capsule-photo",
     "pages/capsule-word/capsule-word",
@@ -13,7 +13,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle":"custom"
   },
   "sitemapLocation": "sitemap.json"
 }
