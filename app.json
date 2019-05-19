@@ -1,7 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/choose-capsule/chooose-capsule",
+    "pages/capsule-date/capsule-date",
+    "pages/capsule-photo/capsule-photo",
+    "pages/capsule-word/capsule-word",
+    "pages/capsule-detail/capsule-detail",
+    "pages/capsule-jar/capsule-jar"
   ],
   "window": {
     "backgroundTextStyle": "light",
