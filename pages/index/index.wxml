@@ -1,7 +1,9 @@
 <!--index.wxml-->
 <!--map-->
 <view>
-<map class="map"></map>
+<map class="map"longitude="{{longitude}}" 
+latitude="{{latitude}}" 
+markers="{{markers}}" ></map>
 </view>
 <!--main button-->
 <view class="choose-capsule" class="button1">
