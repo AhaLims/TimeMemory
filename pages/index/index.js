@@ -24,13 +24,13 @@ Page({
         markers: [],
         longitude: locationInfo.longitude,
         latitude: locationInfo.latitude
-      });
+      });//回调函数 get longitude latitude
       //app.showLoading('正在加载');
       let data = {
         'gisX': that.data.longitude,
         'gisY': that.data.latitude
       };
-      //that.loadData(data); // 加载周边设备信息
+      //that.loadData(data); // 加载周边胶囊信息
     }),
       // 动态设置map的宽和高
       wx.getSystemInfo({
@@ -38,22 +38,23 @@ Page({
           that.setData({
             //map_width: res.windowWidth,
             //map_height: res.windowHeight - 44,
-            controls: [{
-              id: 0,
-              iconPath: '../../imgs/index-position.png',
-              position: {
-                left: res.windowWidth * 0.5 - 80,
-                top: res.windowHeight * 0.65,
-                width: 161,
-                height: 161
-              },
-              clickable: true
-            }]
           })
         }
       });
   },
-
+  onClickButton1:function(event){
+    console.log('点击主按钮跳转')
+    wx.navigateTo({
+      url: '../choose-capsule/chooose-capsule'
+    })
+  },
+  onClickButton2 : function(event){
+    console.log("点击胶囊罐")
+      // 进入 选择胶囊罐 界面
+    wx.navigateTo({
+      url: '../capsule-jar/capsule-jar'
+    })
+  }
 
  
 

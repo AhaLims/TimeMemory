@@ -3,15 +3,14 @@
 <view>
 <map class="map" longitude="{{longitude}}" 
 latitude="{{latitude}}" scale="14"
-controls="{{controls}}" 
 show-location 
 markers="{{markers}}" >
 
 <cover-view class="choose-capsule" class="button1">
-<cover-image mode= "center" src="{{button1Src}}" ></cover-image>
+<cover-image bindtap="onClickButton1" mode= "center" src="{{button1Src}}" ></cover-image>
 </cover-view>
 <cover-view class="choose-capsule-jar">
-<cover-image mode= "center" src="{{button2Src}}" ></cover-image>
+<cover-image bindtap="onClickButton2" mode= "center" src="{{button2Src}}" ></cover-image>
 </cover-view>
 
 </map>
