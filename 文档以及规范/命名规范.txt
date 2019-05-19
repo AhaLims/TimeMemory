@@ -1,0 +1,11 @@
+一些简单的命名规范
+Html css js的
+1.	html里面尽量不要写css和javascript
+2.	html的class命名用这种形式 ‘class-name’  单词都小写，中间用’-’连接
+3.	javascript 尽量少用全局变量 如果一定要用的话…..就用吧
+4.	javascript函数
+5.	其他的等会补充…???
+
+
+图片命名规范:
+'界面名-图片名.png'  比如我的"index-button.png”
