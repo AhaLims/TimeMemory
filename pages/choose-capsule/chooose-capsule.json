@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor":"#f9fbfc",
+  "navigationBarTitleText":"时空记忆",
+  "backgroundColor":"#f6f8fa"
 }

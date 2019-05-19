@@ -1,2 +1,17 @@
 <!--pages/choose-capsule/chooose-capsule.wxml-->
-<text>pages/choose-capsule/chooose-capsule.wxml</text>
+<view class="back">
+</view>
+
+<view class="hint">
+    <text class="hint-content">选择你的胶囊</text>
+</view>
+
+<view class="select">
+    <scroll-view class="select-content">
+
+    </scroll-view>
+
+    <view class="confirm">
+    <button class="confirm-button">就选它 </button>
+    </view>
+</view>
