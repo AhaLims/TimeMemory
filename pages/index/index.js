@@ -8,26 +8,54 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     button1Src : "../../imgs/index-button.png",
-    button2Src: "../../imgs/index-capsule-jar.png" 
+    button2Src: "../../imgs/index-capsule-jar.png" ,
+    longitude: 0, // 经度
+    latitude: 0, //纬度
+    markers: [],
+
   },
   onLoad:function(option){
-    var that = this;
-    that.setData(
-      {
-        longitude: 113,
-        latitude: 23,
-        makers:[ 
-          {
-            id : 0,
-            iconPath: "../../imgs/index-capsule-icon-map.png",
-            //其他人的capsule信息 这里先随便填...????
-            longitude: 114,
-            latitude: 23,
-            width: 30,
-            height: 30
-          }
-        ]//等会要换成获取到的用户的位置
-      }
-    )
-  }
+  },
+  onShow: function () {
+    let that = this;
+    // 获取定位，并把位置标示出来
+    app.getLocationInfo(function (locationInfo) {
+      that.setData({
+        markers: [],
+        longitude: locationInfo.longitude,
+        latitude: locationInfo.latitude
+      });
+      //app.showLoading('正在加载');
+      let data = {
+        'gisX': that.data.longitude,
+        'gisY': that.data.latitude
+      };
+      //that.loadData(data); // 加载周边设备信息
+    }),
+      // 动态设置map的宽和高
+      wx.getSystemInfo({
+        success: function (res) {
+          that.setData({
+            //map_width: res.windowWidth,
+            //map_height: res.windowHeight - 44,
+            controls: [{
+              id: 0,
+              iconPath: '../../imgs/index-position.png',
+              position: {
+                left: res.windowWidth * 0.5 - 80,
+                top: res.windowHeight * 0.65,
+                width: 161,
+                height: 161
+              },
+              clickable: true
+            }]
+          })
+        }
+      });
+  },
+
+
+ 
+
 })
+

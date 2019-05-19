@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/choose-capsule/chooose-capsule",
     "pages/index/index",
+    "pages/choose-capsule/chooose-capsule",
     "pages/logs/logs",
     "pages/capsule-date/capsule-date",
     "pages/capsule-photo/capsule-photo",

@@ -2,19 +2,19 @@
 .button1
 {
   position:absolute;
-  top:700rpx;
-  left:80rpx; 
+  top:900rpx;
+  left:250rpx; 
   z-index : 2;
 }
 .choose-capsule-jar
 {
   position:absolute;
-  top:900rpx;
-  left:330rpx; 
+  top:1100rpx;
+  left:550rpx;
   z-index : 2;
 }
 .map
 {
-  width:760rpx;
-  height: 1200rpx;
+  width:100%;
+  height: 1350rpx;
 }

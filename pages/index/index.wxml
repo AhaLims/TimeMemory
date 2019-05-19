@@ -1,17 +1,30 @@
 <!--index.wxml-->
 <!--map-->
 <view>
-<map class="map"longitude="{{longitude}}" 
-latitude="{{latitude}}" 
-markers="{{markers}}" ></map>
+<map class="map" longitude="{{longitude}}" 
+latitude="{{latitude}}" scale="14"
+controls="{{controls}}" 
+show-location 
+markers="{{markers}}" >
+
+<cover-view class="choose-capsule" class="button1">
+<cover-image mode= "center" src="{{button1Src}}" ></cover-image>
+</cover-view>
+<cover-view class="choose-capsule-jar">
+<cover-image mode= "center" src="{{button2Src}}" ></cover-image>
+</cover-view>
+
+</map>
 </view>
 <!--main button-->
+<!--
 <view class="choose-capsule" class="button1">
 <image mode= "center" src="{{button1Src}}" ></image>
 </view>
 
 
-<!--jar button-->
+
 <view class="choose-capsule-jar">
 <image mode= "center" src="{{button2Src}}" ></image>
 </view>
+-->
